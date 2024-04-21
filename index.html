@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Gavin Goodnight</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-info">
+      <p>Experienced Full Stack Developer specializing in web application development. Skilled in JavaScript, React, Node.js, and MongoDB.</p>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Work Experience</h2>
+    <div class="work-experience">
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="project">
+        <a href="https://ggoodnight0.github.io/Activity-6/" target="_blank"><img src="project1.jpg" alt="Project 1"></a>
+        <p>Project 1 Description</p>
+        <a href="https://ggoodnight0.github.io/Activity-6/" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <a href="https://ggoodnight0.github.io/activity-4/" target="_blank"><img src="project2.jpg" alt="Project 2"></a>
+        <p>Project 2 Description</p>
+        <a href="https://ggoodnight0.github.io/activity-4/" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p>Email: gavin.goodnight@gmail.com</p>
+    <p>Phone: 123-456-7890</p>
+    <p>GitHub: <a href="#">github.com/ggoodnight0</a></p>
+  </section>
+</main>
+
+<script>
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
